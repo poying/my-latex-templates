@@ -1,0 +1,64 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{lipsum} 
+\usepackage{mathtools}
+
+% 中文設定
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setCJKmainfont{YuMincho}
+\setCJKmonofont{YuMincho}
+
+%----------------------------------------------------------------------------------------
+%	VARIABLES
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hwTitle}{Assignment\ \#1}
+\newcommand{\hwDueDate}{Monday,\ January\ 1,\ 2012}
+\newcommand{\hwClass}{COMPSCI\ 101}
+\newcommand{\hwClassTime}{10:30am}
+\newcommand{\hwClassInstructor}{Jones}
+\newcommand{\hwAuthorName}{陳柏穎}
+\newcommand{\hwAuthorID}{s310551037}
+\newenvironment{problem}[1]{\section*{#1}}{}
+\newenvironment{answer}{
+	\vspace{0.2in}
+}{
+	\vspace{0.2in}
+}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+	\vspace{2in}
+	\textmd{\textbf{\hwClass:\ \hwTitle}}\\
+	\normalsize\vspace{0.1in}\small{Due\ on\ \hwDueDate}\\
+	\vspace{0.1in}\large{\textit{\hwClassInstructor\ \hwClassTime}}
+	\vspace{3in}
+}
+
+\author{
+	\textbf{\hwAuthorName}\\
+	\small{\hwAuthorID}
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+\begin{problem}{1-1 10.a}
+	\lipsum[1]
+	\begin{answer}
+		\lipsum[1]
+	\end{answer}
+\end{problem}
+
+
+\end{document}
